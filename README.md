@@ -27,8 +27,6 @@ npm install
 
 ## 📄 Configuration
 
-> **OPTION 1️⃣**
-
 Copy or Rename `.env.example` to `.env` and fill out the values:
 
 ```.env
