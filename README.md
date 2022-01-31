@@ -20,8 +20,8 @@
 ## 📚 Installation
 
 ```
-git clone https://github.com/Adivise/NanoSpace
-cd NanoSpace
+git clone https://github.com/Adivise/DispactX
+cd DispactX
 npm install
 ```
 
