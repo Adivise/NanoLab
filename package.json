@@ -1,0 +1,23 @@
+{
+  "name": "genshin",
+  "version": "1.0.0",
+  "description": "discord bot for genshin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "register": "node registerSlash.js",
+    "clear": "node clearSlash.js"
+  },
+  "author": "Adivise",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "chalk": "^4.1.2",
+    "delay": "^5.0.0",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.3.1",
+    "dotenv": "^14.3.2",
+    "figlet": "^1.5.2",
+    "node-fetch": "^2.6.0"
+  }
+}
