@@ -1,4 +1,3 @@
-const delay = require('delay');
 const { readdirSync } = require('fs');
 
 module.exports = async (client) => {
@@ -11,6 +10,4 @@ module.exports = async (client) => {
         }
     };
     ["client", "guild"].forEach((x) => loadcommand(x));
-    await delay(4000);
-    console.log(`[INFORMATION] Global Events Loaded`);
 };

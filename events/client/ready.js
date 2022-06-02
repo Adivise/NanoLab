@@ -1,13 +1,7 @@
-const figlet = require('figlet');
 const chalk = require('chalk');
+const Dashbaord = require('../../dashboard/dashboard.js');
 
 module.exports = async (client) => {
-  figlet(client.user.tag, function(err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.log(chalk.red.bold(data));
-  });
+  console.log("\n" + chalk.green("[READY]") + " " + client.user.tag + " is ready!");
+  await Dashbaord(client);
 }

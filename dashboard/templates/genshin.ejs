@@ -1,0 +1,28 @@
+<%- include("partials/header", { bot, user, path, cookie, uid, title: `Login` }) %>
+
+<div class="container-sm center" style="margin-top: 30px;">
+  <div class="d-grid gap-2 col-4 mx-auto">
+    <% if (alert) { %>
+      <div class="alert alert-success" role="alert">
+        <%= alert %>
+      </div>
+    <% } %>
+    <h1 style="font-family:Consolas;" class="text-dark" >Genshin Impact</h1>
+    <p style="font-family:Consolas;" class="text-dark" >Fill this * Fields to Login Genshin Account</p>
+    <p>How to get Cookie? <a href="https://gist.github.com/Adivise/9d583d95d43ec56ad1ee07fd3fff07f2">Tutorial</a></p>
+    <form method="POST">
+      <p class="h5" style="margin-bottom: 0.5rem; margin-top: 10px;">Genshin UID*</p>
+      <p style="font-style: italic;" class="disabled">Enter a Genshin Impact UID</p>
+      <input type="text" class="form-control" name="uid" value="<%= uid %>" placeholder="Your UID">
+    
+      <p class="h5" style="margin-bottom: 0.5rem; margin-top: 10px;">Genshin Cookie*</p>
+      <p style="font-style: italic;" class="disabled">Enter a Hoyoverse Cookie</p>
+      <input type="text" class="form-control" name="cookie" value="<%= cookie %>" placeholder="Your Cookie">
+
+      <br><button style="font-family:Consolas;" type="submit" class="btn btn-success text-white">Submit</button>
+      
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer") %>

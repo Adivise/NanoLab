@@ -11,6 +11,4 @@ module.exports = async (client) => {
             }
         });
     })
-    await delay(4000);
-    console.log(`[INFORMATION] Command Events Loaded`);
 }
