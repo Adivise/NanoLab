@@ -21,8 +21,8 @@
 ## 📚 Installation
 
 ```
-git clone https://github.com/Adivise/DispactX
-cd DispactX
+git clone https://github.com/Adivise/NanoLab
+cd NanoLab
 npm install
 ```
 
@@ -36,7 +36,7 @@ TOKEN=REPLACE_HERE
 CLIENT_SECRET=REPLACE_HERE
 
 # Database
-MONGO_URI=mongodb://127.0.0.1:27017/dispactx
+MONGO_URI=mongodb://127.0.0.1:27017/nanolab
 
 # Website
 DOMAIN=http://localhost
