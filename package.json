@@ -1,0 +1,31 @@
+{
+  "name": "dispactx",
+  "version": "2.1.0",
+  "description": "discord bot for genshin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Adivise",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "@genshin-kit/core": "^2.6.2",
+    "body-parser": "^1.20.0",
+    "discord-api-types": "^0.29.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "genshin-data": "^0.19.0",
+    "genshin-kit": "^2.5.0",
+    "memorystore": "^1.6.7",
+    "mongoose": "^6.2.10",
+    "passport": "^0.6.0",
+    "passport-discord": "^0.1.4",
+    "path": "^0.12.7",
+    "plsargs": "^0.1.6",
+    "url": "^0.11.0"
+  }
+}
