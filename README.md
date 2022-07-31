@@ -16,8 +16,6 @@
 2. Discord Bot Token & Client Secret! **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**
 3. MongoDB **[Download](https://www.mongodb.com/try/download/community)** (Download & install = Finish!)
 
-![see](https://i.imgur.com/XTVKLkF.jpg)
-
 ## 📚 Installation
 
 ```
@@ -37,11 +35,6 @@ CLIENT_SECRET=REPLACE_HERE
 
 # Database
 MONGO_URI=mongodb://127.0.0.1:27017/nanolab
-
-# Website
-DOMAIN=http://localhost
-PORT=80
-CUSTOM_DOMAIN=false
 ```
 
 After installation or finishes all you can use `node .` to start the bot. or `Run Start.bat`
