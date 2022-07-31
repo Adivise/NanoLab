@@ -8,9 +8,4 @@ module.exports = {
 
     /// Database
     MONGO_URI: process.env.MONGO_URI || "YOUR_MONGO_URI",  // your mongo uri
-
-    /// Website
-    DOMAIN: process.env.DOMAIN || "http://localhost",  // your domain
-    PORT: process.env.PORT || "80",  // your port
-    CUSTOM_DOMAIN: process.env.CUSTOM_DOMAIN || false,  // using custom domain
 }

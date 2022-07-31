@@ -33,16 +33,19 @@ module.exports = async (client) => {
     }
 
     client.CheckAndUpdate = async function (interaction, user_id) {
+       // await interaction.deferReply({ ephemeral: false });
+
         const database = await Hoyolab.findOne({ user_id: user_id });
         /// Return went user not set cookie
         if (!database.hyv_cookie) {
-            interaction.editReply("Use the `/genshin login` to set your hoyolab cookie and genshin impact uid!");
+            interaction.reply("Use the `/genshin login` to set your hoyolab cookie and genshin impact uid!");
             return;
         }
 
         await client.genshin.loginWithCookie(database.hyv_cookie);
         await client.genshin.setServerType("os");
         await client.genshin.setServerLocale("en-us");
+            /// Get status error
     }
 
     console.log(`[+] Genshin Handler is ready!`);

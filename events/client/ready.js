@@ -1,6 +1,6 @@
-const Dashbaord = require('../../dashboard/dashboard.js');
+const { DiscordModal } = require('discord-modal');
 
 module.exports = async (client) => {
   console.log(`[+] ${client.user.tag} is ready!`);
-  await Dashbaord(client);
+  await DiscordModal(client);
 }

@@ -4,6 +4,8 @@ const GenPage = async (client, message, pages, timeout, cLength) => {
     if (!message && !message.channel) throw new Error('Channel is inaccessible.');
     if (!pages) throw new Error('Pages are not given.');
 
+    await message.deferReply({ ephemeral: false });
+
     const row1 = new MessageButton()
         .setCustomId('back')
         .setLabel('⬅')
