@@ -1,7 +1,6 @@
 ## 📑 Short Feature
-- [x] Get All About In Game!
-- [x] Dashboard to login!
-- [x] SlashCommand!
+- [x] Display all data in game!
+- [x] Slash Command! (Base, Group, Sub)
 - [x] Easy to use
 
 ## 🚨 Have a Problem
@@ -13,8 +12,7 @@
 ## 📎 Requirements
 
 1. Node.js **[Download](https://nodejs.org/en/download/)**
-2. Discord Bot Token & Client Secret! **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**
-3. MongoDB **[Download](https://www.mongodb.com/try/download/community)** (Download & install = Finish!)
+2. Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**
 
 ## 📚 Installation
 
@@ -31,10 +29,29 @@ Copy or Rename `.env.example` to `.env` and fill out the values:
 ```.env
 # Bot
 TOKEN=REPLACE_HERE
-CLIENT_SECRET=REPLACE_HERE
-
-# Database
-MONGO_URI=mongodb://127.0.0.1:27017/nanolab
+EMBED_COLOR=#000001
+OWNER_ID=REPLACE_HERE
 ```
 
 After installation or finishes all you can use `node .` to start the bot. or `Run Start.bat`
+
+## 🔩 Features & Commands
+
+> Note: The default prefix is '/'
+
+💬 **General Commands!**
+- Activities (/genshin activities)
+- Login (/genshin login)
+
+💬 **Abyss Commands!**
+- Current (/genshin abyss current)
+- Previous (/genshin abyss previous)
+
+💬 **Character Commands!**
+- Lists (/genshin character lists)
+- Details (/genshin character details)
+
+💬 **Info Commands!**
+- Summary (/genshin info summary)
+- Exploration (/genshin info exploration)
+- Seranitea (/genshin info serenitea)
